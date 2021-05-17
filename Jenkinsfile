@@ -15,6 +15,7 @@ pipeline
       {   steps
             {
                 echo 'test phase'
+                echo 'second change in test '
             }
       }
       stage("deploy")

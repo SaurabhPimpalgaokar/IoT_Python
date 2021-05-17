@@ -9,6 +9,7 @@ pipeline
       {   steps
             {
                 echo 'build phase'
+                echo 'build by slave'
             }
       }
       stage("test")
@@ -16,6 +17,8 @@ pipeline
             {
                 echo 'test phase'
                 echo 'second change in test '
+                echo 'test by slave'
+              
             }
       }
       stage("deploy")
